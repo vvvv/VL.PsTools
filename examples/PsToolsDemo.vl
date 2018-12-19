@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="Kt7CCSxqOIfPeyt43k6RCi" Version="0.93">
+  <Patch Id="I2s0JAiCaS3LGAT9yCTpur">
+    <Canvas Id="LawPxCk3tjPN3iNETCDN0e" DefaultCategory="Main" CanvasType="FullCategory">
+      <!--
+
+    ************************ Root ************************
+
+-->
+      <Node Name="Root" Bounds="213,127" Id="JfXZGsA1WAYLHuJaXjDzeb">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" Name="Process" />
+          <FullNameCategoryReference ID="Primitive" />
+        </p:NodeReference>
+        <Patch Id="VQcMsJW6JXaMlOj7BBF8Ir">
+          <Canvas Id="OoxEI8DwUX1OcsTfQ0nZfS" CanvasType="Group">
+            <Node Bounds="266,191,61,13" Id="Ift4FURDP3JQPXz78JfAUw">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.PsTools.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="PsTools" />
+              </p:NodeReference>
+              <Pin Id="RF7515Sg9KlPYPvgysnn5p" Name="Path" Kind="InputPin" />
+            </Node>
+            <Node Bounds="140,557,125,13" Id="PdGEOl08MsqPFhrB1I4lWy">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.PsTools.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="PsExec" />
+              </p:NodeReference>
+              <Pin Id="DfjSFqbpsh2NItnqheOell" Name="Remote Host" Kind="InputPin" />
+              <Pin Id="KbDYb7bt243NnMK2JDPoG0" Name="Filename" Kind="InputPin" />
+              <Pin Id="MHOQOK7so6ILWjYVHSYdGW" Name="Arguments" Kind="InputPin" />
+              <Pin Id="ExfHNnDSlFDOXbQk2eh6LH" Name="Run As Admin" Kind="InputPin" />
+              <Pin Id="H4Jpx3AchshMtdSvRExN2C" Name="Username" Kind="InputPin" />
+              <Pin Id="MbnK5KchRBUQXYevBsTtvB" Name="Password" Kind="InputPin" />
+              <Pin Id="LMfV0BQVTypMZg3zg2EDK9" Name="Execute" Kind="InputPin" />
+              <Pin Id="C7WpjSOPFT4LOmqS32GeSx" Name="Output" Kind="OutputPin" />
+              <Pin Id="SoC9SIm5yccNqyXm0CI9Ou" Name="Error" Kind="OutputPin" />
+              <Pin Id="Hwtzo31kVRDMW9rMT9xLWZ" Name="IsRunning" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="407,557,85,13" Id="LnLOpYC13LQLcExlT38W9w">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.PsTools.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="PsKill" />
+              </p:NodeReference>
+              <Pin Id="C0r9nF7QcIVMc4RLt2Kbd8" Name="Remote Host" Kind="InputPin" />
+              <Pin Id="AFCDP2hKGtNL52I7FXbdVA" Name="Process Name" Kind="InputPin" />
+              <Pin Id="NtPxpFTL47iOH74QN3y12e" Name="Username" Kind="InputPin" />
+              <Pin Id="PN83sNu76B0QNXabbCDlp8" Name="Password" Kind="InputPin" />
+              <Pin Id="SdWBDo9lRleP64frLoJSWd" Name="Execute" Kind="InputPin" />
+              <Pin Id="PegvYp3qryALqfIuf9Ym7Y" Name="Output" Kind="OutputPin" />
+              <Pin Id="LHXtam1wcgOLeKkopp2rcq" Name="Error" Kind="OutputPin" />
+              <Pin Id="V0z1Oknkz8mLtBEtqAhYyj" Name="IsRunning" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="662,557,125,13" Id="DKCyHgycqKzOU4aG2o4gGx">
+              <p:NodeReference LastCategoryFullName="Main" LastSymbolSource="VL.PsTools.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="ProcessAppFlag" Name="PsShutdown" />
+              </p:NodeReference>
+              <Pin Id="EpiePbejtvEOXNBbBiFsJu" Name="Remote Host" Kind="InputPin" />
+              <Pin Id="Qr2Zy9a2O0qLHrcsWSRgxg" Name="Reboot" Kind="InputPin" />
+              <Pin Id="L6PsroejpIkNf9mhxRK4aX" Name="Username" Kind="InputPin" />
+              <Pin Id="VjZ2ZVrH6RvLHAVnHR2PSR" Name="Password" Kind="InputPin" />
+              <Pin Id="CxoY5A1LMcRP0RBxS9rvGi" Name="Execute" Kind="InputPin" />
+              <Pin Id="PGJZgTV5Y2rPSeFHJFpjpu" Name="Output" Kind="OutputPin" />
+              <Pin Id="JEMo9mEXmXVOI0lxIKiEmY" Name="Error" Kind="OutputPin" />
+              <Pin Id="T5VsUcCyFVIP28XvFXIGiQ" Name="IsRunning" Kind="OutputPin" />
+            </Node>
+            <Pad Id="OB7zHoJAuXtNUt3JgFFudc" Comment="Path To PsTools " Bounds="268,158,285,20" ShowValueBox="true" isIOBox="true" Value="{&quot;_path&quot;:&quot;&quot;}">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="C8LWvPZfbWUNsB7VuglLMn" Comment="Remote Host" Bounds="142,310,116,20" ShowValueBox="true" isIOBox="true" Value="&quot;\\\\192.168.178.121&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="TarOLQtu2Z8MdnpHa0QX9S" Comment="Arguments" Bounds="180,457,413,20" ShowValueBox="true" isIOBox="true" Value="&quot;&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="R322XOURz86OG24X8fRkCF" Comment="Run As Admin" Bounds="202,498,40,19" ShowValueBox="true" isIOBox="true" Value="true">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="RXipqAjm9BQQWDDRyS6jit" Comment="Username" Bounds="361,358,80,20" ShowValueBox="true" isIOBox="true" Value="&quot;&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="REygfiEW4y5QTy9CEx7UuW" Comment="Password" Bounds="522,358,103,20" ShowValueBox="true" isIOBox="true" Value="&quot;&quot;">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="String" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="BUxjeY9d7m4PY8b8isIxXS" Comment="Execute" Bounds="262,521,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Node Bounds="419,498,50,13" Id="UZGKJaUVdJSQOa63OIGzLJ">
+              <p:NodeReference LastCategoryFullName="IO.Path" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <CategoryReference Kind="Category" Name="Path" />
+                <Choice Kind="OperationCallFlag" Name="Filename (Split)" />
+              </p:NodeReference>
+              <Pin Id="P4tNTWCRvjAOkFSLyKPh14" Name="Input" Kind="StateInputPin" />
+              <Pin Id="QwtRSyOl3QXPa6LzlIu0w8" Name="Directory" Kind="OutputPin" />
+              <Pin Id="FptVltxaJb1N5XxzWLHFSv" Name="Filename" Kind="OutputPin" />
+              <Pin Id="UhstRfww5c5NTRAYL55XLi" Name="Extension" Kind="OutputPin" />
+            </Node>
+            <Pad Id="CQF08DjxajWMFiuLesKf03" Comment="Filename" Bounds="361,313,469,19" ShowValueBox="true" isIOBox="true" Value="{&quot;_path&quot;:&quot;&quot;}">
+              <p:TypeAnnotation LastCategoryFullName="IO" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Path" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="KArF9oZUjEPQXhk8PvaihF" Comment="Execute" Bounds="489,529,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+            <Pad Id="OQDLClH1tzROVUgSWiMV11" Comment="Reboot" Bounds="694,503,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+            </Pad>
+            <Pad Id="LtZtFfIpUDsPK3MQV2xBXX" Comment="Execute" Bounds="784,534,40,19" ShowValueBox="true" isIOBox="true" Value="false">
+              <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="TypeFlag" Name="Boolean" />
+              </p:TypeAnnotation>
+              <p:ValueBoxSettings>
+                <p:buttonmode p:Assembly="VL.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
+              </p:ValueBoxSettings>
+            </Pad>
+          </Canvas>
+          <Patch Id="INDC69KYz0dMr64Ghj2MVR" Name="Create" />
+          <Patch Id="Pb7zAMZcxsrNegRF0F7bgk" Name="Update" />
+          <ProcessDefinition Id="LJAoFgq02JEMwGMFvPHgsG">
+            <Fragment Id="A45u7jTt322MTVdU57G85x" Patch="INDC69KYz0dMr64Ghj2MVR" Enabled="true" />
+            <Fragment Id="VsMGq2BKPbIOLJZ5slRqJ1" Patch="Pb7zAMZcxsrNegRF0F7bgk" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="RtlA0mJmIvtLsiZQljIeOZ" Ids="OB7zHoJAuXtNUt3JgFFudc,RF7515Sg9KlPYPvgysnn5p" />
+          <Link Id="GnTpePNtohmOXVAGtYkx3E" Ids="C8LWvPZfbWUNsB7VuglLMn,DfjSFqbpsh2NItnqheOell" />
+          <Link Id="Qv1upDqYRmPPbn7GU7ebQ9" Ids="TarOLQtu2Z8MdnpHa0QX9S,MHOQOK7so6ILWjYVHSYdGW" />
+          <Link Id="SZib1hlWbffQWadNtd9ta6" Ids="R322XOURz86OG24X8fRkCF,ExfHNnDSlFDOXbQk2eh6LH" />
+          <Link Id="L5ZBF9ydoeQNsklzEVW9BE" Ids="RXipqAjm9BQQWDDRyS6jit,H4Jpx3AchshMtdSvRExN2C" />
+          <Link Id="J7wNYVIlmziNnSyjnohMPw" Ids="REygfiEW4y5QTy9CEx7UuW,MbnK5KchRBUQXYevBsTtvB" />
+          <Link Id="L9uo9WYlOyZMc4nMGtBvtn" Ids="BUxjeY9d7m4PY8b8isIxXS,LMfV0BQVTypMZg3zg2EDK9" />
+          <Link Id="LeFFbjOsLwcPtvoQqKaxYY" Ids="C8LWvPZfbWUNsB7VuglLMn,C0r9nF7QcIVMc4RLt2Kbd8" />
+          <Link Id="AOQjMsuIFCfLKFFoMJwxmR" Ids="CQF08DjxajWMFiuLesKf03,KbDYb7bt243NnMK2JDPoG0" />
+          <Link Id="D2fWByR3D9ZOX0jnWgfBY9" Ids="CQF08DjxajWMFiuLesKf03,P4tNTWCRvjAOkFSLyKPh14" />
+          <Link Id="UD8Sbe3i7EHPQ2GzND8BjB" Ids="FptVltxaJb1N5XxzWLHFSv,AFCDP2hKGtNL52I7FXbdVA" />
+          <Link Id="NAMyAjyyjz3K9df2d1Wq8l" Ids="RXipqAjm9BQQWDDRyS6jit,NtPxpFTL47iOH74QN3y12e" />
+          <Link Id="KIcGn4bH2NLL7xqrlVJ9BX" Ids="REygfiEW4y5QTy9CEx7UuW,PN83sNu76B0QNXabbCDlp8" />
+          <Link Id="Ag06eRYCX2EP52A8Ma8bIN" Ids="KArF9oZUjEPQXhk8PvaihF,SdWBDo9lRleP64frLoJSWd" />
+          <Link Id="CE2cM6C7r4LPZzWUBJkTW3" Ids="C8LWvPZfbWUNsB7VuglLMn,EpiePbejtvEOXNBbBiFsJu" />
+          <Link Id="SMv6ankZtnILgfT66LzjmG" Ids="OQDLClH1tzROVUgSWiMV11,Qr2Zy9a2O0qLHrcsWSRgxg" />
+          <Link Id="Q722k5Iwa1vLyz0rT5ViBc" Ids="RXipqAjm9BQQWDDRyS6jit,L6PsroejpIkNf9mhxRK4aX" />
+          <Link Id="IHb59jg3h6MNuG2wwzdOdr" Ids="REygfiEW4y5QTy9CEx7UuW,VjZ2ZVrH6RvLHAVnHR2PSR" />
+          <Link Id="TLf0dKe3DpmOkKiQwcurGQ" Ids="LtZtFfIpUDsPK3MQV2xBXX,CxoY5A1LMcRP0RBxS9rvGi" />
+        </Patch>
+      </Node>
+    </Canvas>
+  </Patch>
+  <NugetDependency Id="PeqkX6oHO2yP1LI59LWodJ" Location="VL.CoreLib" Version="0.93.71-g2860854c35" />
+  <PlatformDependency Id="FefIiJeGo4CPpUDnaETfmJ" Location="System.Management" />
+  <PlatformDependency Id="JfJnod5Q4WhLMOLwqtj1Ni" Location="System.Runtime" />
+  <PlatformDependency Id="Q5zBPr6Hi3qP3svXunw6mr" Location="System" />
+  <PlatformDependency Id="D1gxFqaaYS3LpedEd1R9jf" Location="System.Runtime.Extensions" />
+  <NugetDependency Id="GnDjzy9HslJNT3MpJYKACs" Location="VL.IO.OSC" Version="0.93.77-g6c971fbaab" />
+  <NugetDependency Id="VSHjRNuTA1JOxCNRB0MsRR" Location="VL.Skia" Version="0.93.77-g6c971fbaab" />
+  <DocumentDependency Id="J7NHOxcp7AKNyfzEPKSVdZ" Location="../VL.PsTools.vl" />
+</Document>
